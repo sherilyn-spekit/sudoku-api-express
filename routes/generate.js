@@ -23,9 +23,13 @@ router.get('/', function(req, res, next) {
   
   let data = {
     'difficulty': difficulty,
-    'puzzle': puzzle,
-    'solution': solvedPuzzle
+    'puzzle': puzzle
   };
+  // let data = {
+  //   'difficulty': difficulty,
+  //   'puzzle': puzzle,
+  //   'solution': solvedPuzzle
+  // };
     res.json(data);
 });
 
